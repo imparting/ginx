@@ -8,6 +8,6 @@ type User struct {
 	Password string
 }
 
-func (User) TableName() string {
-	return "user"
-}
+// func (User) TableName() string {
+// 	return "user"
+// }

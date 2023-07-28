@@ -15,7 +15,7 @@ func (s *SAccount) Create(in dto.AccountCreateInDto) dto.AccountCreateOutDto {
 		Username: in.Account,
 		Password: in.Password,
 	}
-	res := db.GetDB().Create(&user)
+	res := db.Table("user").Create(&user)
 	fmt.Println(res)
 
 	return dto.AccountCreateOutDto{
