@@ -7,4 +7,5 @@ type AccountCreateInDto struct {
 type AccountCreateOutDto struct {
 	Account  string
 	Password string
+	Count    int64
 }
