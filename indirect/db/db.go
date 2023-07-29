@@ -20,6 +20,14 @@ func init() {
 	}
 }
 
+func HasTable(dst interface{}) bool {
+	return db.Migrator().HasTable(dst)
+}
+
+func AutoMigrate(dst interface{}) error {
+	return db.AutoMigrate(dst)
+}
+
 func GetDB() *gorm.DB {
 	return db
 }
